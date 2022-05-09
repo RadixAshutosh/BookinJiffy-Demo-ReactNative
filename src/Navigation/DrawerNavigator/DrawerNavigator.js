@@ -9,6 +9,7 @@ import AboutBIJ from '../../Screens/Sidebar/AboutBIJ';
 import ContactUs from '../../Screens/Sidebar/ContactUs';
 import SuggestToBusiness from '../../Screens/Sidebar/SuggestToBusiness';
 import Faq from '../../Screens/Sidebar/Faq';
+import Logout from '../../Screens/Sidebar/Logout';
 import Bottombar from '../Bottombar/Bottombar';
 import CustomDrawer from './CustomDrawer';
 import Icon from "react-native-vector-icons/Ionicons"
@@ -28,7 +29,8 @@ const DrawerNavigator = () => {
             <Drawer.Screen name="AboutBIJ" component={AboutBIJ} options={{ drawerIcon: () => <IconContainer name="information-outline" /> }} />
             <Drawer.Screen name="ContactUs" component={ContactUs} options={{ drawerIcon: () => <IconContainer name="call-outline" /> }} />
             <Drawer.Screen name="SuggestToBusiness" component={SuggestToBusiness} options={{ drawerIcon: () => <IconContainer name="ios-briefcase-outline" /> }} />
-            <Drawer.Screen name="Faq" component={Faq} options={{ drawerIcon: () => <IconContainer name="ios-briefcase-outline" /> }} />
+            <Drawer.Screen name="FAQ" component={Faq} options={{ drawerIcon: () => <IconContainer name="ios-warning-outline" /> }} />
+            <Drawer.Screen name="Logout" component={Logout} options={{ drawerIcon: () => <IconContainer name="log-out-outline" /> }} />
 
            
         </Drawer.Navigator>
